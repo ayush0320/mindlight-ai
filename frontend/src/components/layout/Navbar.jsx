@@ -6,7 +6,7 @@ const Navbar = () => {
         <Box bg="teal.500" px={4} py={3}>
             <Flex maxW="container.lg" mx="auto" alignItems="center" justifyContent="space-between">
                 <Heading size="md" color="white">
-                    Mental Health Assistant
+                    Mindlight AI
                 </Heading>
                 <Flex gap={6}>
                     <Link as={RouterLink} to="/" color="white">
