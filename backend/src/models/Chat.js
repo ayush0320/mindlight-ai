@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 //message: Content of the message.
 //timestamp: Auto-generated timestamp to track when the message was sent.
 
+//Schema
 const chatSchema = new mongoose.Schema({
     sessionId: {
         type: String,
@@ -36,4 +37,5 @@ const chatSchema = new mongoose.Schema({
     },
 });
 
+//Model
 module.exports = mongoose.model('Chat', chatSchema);

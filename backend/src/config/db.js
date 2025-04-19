@@ -4,7 +4,8 @@ const mongoose = require('mongoose'); //Mongoose is a library that makes it easi
 
 //Define connectDB function
 //connectDB is an asynchronous function, which means it can handle tasks that take time (like connecting to a database)
-// without blocking the rest of the program.
+//without blocking the rest of the program.
+
 const connectDB = async () => {
     try {
 

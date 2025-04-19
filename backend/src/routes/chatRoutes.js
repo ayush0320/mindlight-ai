@@ -1,6 +1,5 @@
 const express = require('express');
 const router = express.Router();
-const chat = require('../models/Chat');
 const Chat = require('../models/Chat');
 
 //1. GET Route (Retrieving Chat History)
