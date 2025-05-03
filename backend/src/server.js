@@ -22,6 +22,7 @@ app.use(express.json());
 app.use('/api/chat', require('./routes/chatRoutes'));
 app.use('/api/mood', require('./routes/moodRoutes'));
 app.use('/api/resources', require('./routes/resourceRoutes'));
+app.use('/api/auth', require('./routes/authRoutes')); // Authentication routes
 
 //Start the server
 const PORT = process.env.PORT || 5000;
