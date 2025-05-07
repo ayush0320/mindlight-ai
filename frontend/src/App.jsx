@@ -11,8 +11,6 @@ import Home from './pages/Home'
 import Chat from './pages/Chat'
 import MoodTracker from './pages/MoodTracker'
 import Resources from './pages/Resources'
-import Login from './pages/Login'
-import Register from './pages/Register'
 
 function App() {
   return (
@@ -24,8 +22,6 @@ function App() {
           <Route path="/chat" element={<Chat />} />
           <Route path="/mood" element={<MoodTracker />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
         </Routes>
       </Router>
     </ChakraProvider>

@@ -57,18 +57,6 @@ const Navbar = () => {
                     >
                         Resources
                     </NavLink>
-                    <NavLink
-                        to="/login"
-                        style={({ isActive }) => (isActive ? activeLinkStyles : linkStyles)}
-                    >
-                        Login
-                    </NavLink>
-                    <NavLink
-                        to="/register"
-                        style={({ isActive }) => (isActive ? activeLinkStyles : linkStyles)}
-                    >
-                        Register
-                    </NavLink>
                 </Flex>
             </Flex>
         </Box>
