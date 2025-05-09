@@ -1,4 +1,7 @@
-require('dotenv').config();
+// This file is responsible for connecting to the MongoDB database using Mongoose.
+
+const dotenv = require('dotenv');
+dotenv.config();
 const mongoose = require('mongoose'); //Mongoose is a library that makes it easier to interact with MongoDB in a Node.js application
 // //It helps with connecting to the database and defining "models" for storing and retrieving data
 
@@ -13,7 +16,6 @@ const connectDB = async () => {
         const conn = await mongoose.connect(process.env.MONGODB_URI);
 
         console.log('MONGODB_URI:', process.env.MONGODB_URI);
-        console.log(`MongoDB connected yayy! ${conn.connection.host}`);
     } catch (error) {
         //Handle errors
         console.error(`Error: ${error.message}`);
@@ -22,15 +24,3 @@ const connectDB = async () => {
 };
 
 module.exports = connectDB;
-
-
-// Check if the URI exists
-// if (!process.env.MONGODB_URI) {
-//     console.error('MongoDB URI is not defined in environment variables');
-//     process.exit(1);
-// }
-
-// // Connect to MongoDB
-// mongoose.connect(process.env.MONGODB_URI)
-//     .then(() => console.log('MongoDB connected'))
-//     .catch(err => console.error('MongoDB connection error:', err));
